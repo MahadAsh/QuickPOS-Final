@@ -6,7 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST["email"]);
     $message = trim($_POST["message"]);
 
-    // [POS-18] PHP backend validation logic
     if (empty($name) || empty($email) || empty($message)) {
         die("Error: All fields are required.");
     }
@@ -15,9 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Error: Invalid email format.");
     }
 
-    // Validation passed! 
-    echo "Validation successful!";
+    // [POS-19] Redirect logic to a thank-you page
+    header("Location: thank-you.php");
+    exit();
 } else {
-    die("Invalid request method.");
+    header("Location: index.php");
+    exit();
 }
 ?>
