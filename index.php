@@ -70,6 +70,14 @@
         </div>
     </section>
 
-    
+    <section id="contact" style="padding: 50px 20px;">
+        <h2 style="text-align: center; margin-bottom: 30px;">Get in Touch</h2>
+        <form action="process_contact.php" method="POST" class="glass">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn" style="margin-top: 10px;">Send Message</button>
+        </form>
+    </section>
 </body>
 </html>
