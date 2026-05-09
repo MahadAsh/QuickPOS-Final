@@ -1,0 +1,77 @@
+name: QuickPOS CI/CD Pipeline
+
+# Trigger on PR to main, and push to feature/bugfix branches
+on:
+  push:
+    branches:
+      - "feature/**"
+      - "bugfix/**"
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  # Job 1: Jira Commit Validation (Fails fast if ID is missing)
+  jira-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate Jira ID in Commit Message
+        run: |
+          COMMIT_MSG=$(git log -1 --format=%B)
+          echo "Checking commit: $COMMIT_MSG"
+          if ! echo "$COMMIT_MSG" | grep -Eq '\[POS-[0-9]+\]'; then
+            echo "Pipeline Failed: Commit message MUST contain a Jira ID (e.g., [POS-101])."
+            exit 1
+          else
+            echo "Jira ID found. Validation passed!"
+          fi
+
+  # Job 2: Code Quality (Runs in parallel)
+  code-quality:
+    runs-on: ubuntu-latest
+    needs: jira-validation
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          tools: phpstan
+
+      - name: Syntax Check
+        run: php -l process_contact.php
+
+      - name: Code Quality - PHPStan
+        run: phpstan analyse process_contact.php --level=0
+
+  # Job 3: Automated Testing (Runs in parallel)
+  automated-testing:
+    runs-on: ubuntu-latest
+    needs: jira-validation
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+
+      - name: Execute Automated Tests
+        run: php tests/run_tests.php
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: quickpos-build-files
+          path: |
+            *.php
+            *.css
+            tests/
