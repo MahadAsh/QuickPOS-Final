@@ -31,5 +31,22 @@
     </section>
     </section>
     
+    <section id="features" class="grid">
+        <div class="card glass">
+            <i class="fas fa-chart-line fa-3x" style="margin-bottom: 15px;"></i>
+            <h3>Real-time Analytics</h3>
+            <p>Track your sales, inventory, and staff performance in real-time.</p>
+        </div>
+        <div class="card glass">
+            <i class="fas fa-cloud fa-3x" style="margin-bottom: 15px;"></i>
+            <h3>Cloud Sync</h3>
+            <p>Access your store data from anywhere, on any device securely.</p>
+        </div>
+        <div class="card glass">
+            <i class="fas fa-lock fa-3x" style="margin-bottom: 15px;"></i>
+            <h3>Bank-grade Security</h3>
+            <p>Your transactions and customer data are heavily encrypted.</p>
+        </div>
+    </section>
 </body>
 </html>
