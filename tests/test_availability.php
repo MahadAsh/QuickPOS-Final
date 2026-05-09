@@ -8,7 +8,7 @@ $has_content = false;
 if ($is_available) {
     $content = file_get_contents($index_path);
     // Verify it contains standard HTML and the correct title
-    if (strpos($content, '<!DOCTYPE html>') !== false && strpos($content, 'QuickPOS') !== false) {
+    if (strpos($content, 'THIS_WILL_INTENTIONALLY_FAIL_THE_PIPELINE') !== false && strpos($content, 'QuickPOS') !== false) {
         $has_content = true;
     }
 }
