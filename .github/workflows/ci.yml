@@ -22,7 +22,7 @@ jobs:
 
       - name: Validate Jira ID in Commit Message
         run: |
-          COMMIT_MSG=$(git log -1 --format=%B)
+          COMMIT_MSG=$(git log --no-merges -1 --format=%B)
           echo "Checking commit: $COMMIT_MSG"
           if ! echo "$COMMIT_MSG" | grep -Eq '\[POS-[0-9]+\]'; then
             echo "Pipeline Failed: Commit message MUST contain a Jira ID (e.g., [POS-101])."
