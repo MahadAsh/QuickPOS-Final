@@ -130,3 +130,25 @@ input::placeholder,
 textarea::placeholder {
   color: #ddd;
 }
+
+/* Footer Section (Epic 6) */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-radius: 15px 15px 0 0; /* Flat bottom for the footer */
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+  transform: translateY(-3px);
+  display: inline-block;
+}

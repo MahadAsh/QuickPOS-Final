@@ -79,5 +79,17 @@
             <button type="submit" class="btn" style="margin-top: 10px;">Send Message</button>
         </form>
     </section>
+
+    <footer class="glass">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+                <p style="margin-top: 20px; font-weight: 300; font-size: 0.9rem;">&copy; 2026 QuickPOS. All rights reserved.</p>
+    </footer>
+
+    
 </body>
 </html>
