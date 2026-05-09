@@ -53,3 +53,21 @@ nav a {
 .btn:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+
+/* Hero Section (Epic 2) */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}

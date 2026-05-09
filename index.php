@@ -20,6 +20,9 @@
         </nav>
         <button class="btn">Sign Up</button>
     </header>
-
+    <section class="hero glass">
+        <h1>Smarter Sales, Seamless Operations</h1>
+        <p>Transform your retail business with the fastest, most intuitive Point of Sale system designed for modern merchants.</p>
+    </section>
 </body>
 </html>
