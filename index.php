@@ -23,6 +23,13 @@
     <section class="hero glass">
         <h1>Smarter Sales, Seamless Operations</h1>
         <p>Transform your retail business with the fastest, most intuitive Point of Sale system designed for modern merchants.</p>
+        <section class="hero glass">
+        <h1>Smarter Sales, Seamless Operations</h1>
+        <p>Transform your retail business with the fastest, most intuitive Point of Sale system designed for modern merchants.</p>
+        
+        <button class="btn" style="padding: 15px 40px; font-size: 1.1rem; margin-top: 20px;">Get Started Free</button>
     </section>
+    </section>
+    
 </body>
 </html>
