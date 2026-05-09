@@ -48,5 +48,28 @@
             <p>Your transactions and customer data are heavily encrypted.</p>
         </div>
     </section>
+
+    <section id="pricing" class="grid">
+        <div class="card glass">
+            <h3>Basic</h3>
+            <div class="price">$29/mo</div>
+            <p>Perfect for small stalls</p>
+        </div>
+        
+        <div class="card glass pro-tier">
+            <h3>Pro</h3>
+            <div class="price">$79/mo</div>
+            <p>Best for growing stores</p>
+            <button class="btn" style="margin-top: 15px; padding: 8px 20px;">Choose Pro</button>
+        </div>
+        
+        <div class="card glass">
+            <h3>Enterprise</h3>
+            <div class="price">$199/mo</div>
+            <p>For multi-store chains</p>
+        </div>
+    </section>
+
+    
 </body>
 </html>

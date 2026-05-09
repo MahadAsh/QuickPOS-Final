@@ -91,3 +91,16 @@ nav a {
 .card h3 {
   margin-bottom: 15px;
 }
+
+/* Pricing Section (Epic 4) */
+.price {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+/* Highlight the middle tier */
+.pro-tier {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
