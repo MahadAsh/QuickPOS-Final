@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickPOS - Modern Point of Sale</title>
+    <title>QuickPOS - Mahad F233007-video-demo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -22,6 +22,7 @@
     </header>
     <section class="hero glass">
         <h1>Smarter Sales, Seamless Operations</h1>
+        <h1>Smarter Sales, Seamless Operations- VIVA-DEMO</h1>
         <p>Transform your retail business with the fastest, most intuitive Point of Sale system designed for modern merchants.</p>
         <section class="hero glass">
         <h1>Smarter Sales, Seamless Operations</h1>
