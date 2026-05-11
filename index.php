@@ -22,6 +22,7 @@
     </header>
     <section class="hero glass">
         <h1>Smarter Sales, Seamless Operations</h1>
+        <h1>Smarter Sales, Seamless Operations- VIVA-DEMO</h1>
         <p>Transform your retail business with the fastest, most intuitive Point of Sale system designed for modern merchants.</p>
         <section class="hero glass">
         <h1>Smarter Sales, Seamless Operations</h1>
